@@ -156,6 +156,25 @@ python3 skills/digital-ads-ultimate/scripts/marketplace_analyzer.py examples/mar
 
 The sample file is fictional. In it, "Kaos Polos 3 Pack" shows ROAS 5.00 but POAS 0.25 and is marked CUT.
 
+### Practice workbook (Excel)
+
+`examples/Digital_Ads_Practice_Workbook_2026.xlsx` is a full hands-on file with fictional data (brand "Nusa Apparel"). One sheet per platform, live formulas, color-coded inputs, and a verdict per row.
+
+| Sheet | What you practice |
+| --- | --- |
+| Panduan | How to use, color code, metric definitions |
+| Asumsi | Unit economics, break-even ROAS, target POAS, thresholds (edit the yellow cells) |
+| Google Ads | 6 campaigns incl. brand vs PMax brand share, plus a search-terms table for negative keywords |
+| Meta Ads | 7 ads: fatigue, strong hook but weak landing, low data |
+| TikTok Ads | 7 creatives: hook rate, hold rate, CTR drop, Spark |
+| LinkedIn Ads | B2B down to SQL and Won deals: cheap leads that never become SQL |
+| Marketplace | Shopee, Tokopedia, TikTok Shop: ROAS vs POAS, fee stack, TACoS per platform |
+| Mingguan | 8 weeks of MER, break-even MER, platform claims vs real revenue, CAC |
+| Dashboard | Cross-platform summary, worst rows, charts |
+| Latihan | 13 tasks with live answer keys and copy-paste prompts |
+
+Replace the blue cells with your own exports, set the yellow assumptions, then attach the file to your agent. Prompts are in the Latihan sheet (Indonesian) and in the sections above.
+
 ### Layout
 
 ```
@@ -169,6 +188,7 @@ skills/digital-ads-ultimate/
   scripts/ads_math.py
   scripts/marketplace_analyzer.py
 examples/marketplace_ads_sample.csv
+examples/Digital_Ads_Practice_Workbook_2026.xlsx
 ```
 
 ### Principles and honest limits
@@ -318,6 +338,25 @@ python3 skills/digital-ads-ultimate/scripts/marketplace_analyzer.py examples/mar
 ```
 
 File contoh itu fiktif. Di dalamnya, "Kaos Polos 3 Pack" punya ROAS 5,00 tapi POAS 0,25 dan ditandai CUT.
+
+### Workbook latihan (Excel)
+
+`examples/Digital_Ads_Practice_Workbook_2026.xlsx` adalah file praktik lengkap dengan data fiktif (brand "Nusa Apparel"). Satu sheet per platform, rumus hidup, sel input berwarna biru, dan verdict di tiap baris.
+
+| Sheet | Yang dilatih |
+| --- | --- |
+| Panduan | Cara pakai, kode warna, definisi metrik |
+| Asumsi | Ekonomi per pesanan, break-even ROAS, target POAS, ambang penilaian (ganti sel kuning) |
+| Google Ads | 6 campaign termasuk porsi brand di PMax, plus tabel search terms untuk negative keyword |
+| Meta Ads | 7 iklan: fatigue, hook kuat tapi landing lemah, data kurang |
+| TikTok Ads | 7 kreatif: hook rate, hold rate, CTR turun, Spark |
+| LinkedIn Ads | B2B sampai SQL dan deal Won: lead murah yang tidak jadi SQL |
+| Marketplace | Shopee, Tokopedia, TikTok Shop: ROAS vs POAS, tumpukan biaya, TACoS per platform |
+| Mingguan | 8 minggu MER, break-even MER, klaim platform vs omzet nyata, CAC |
+| Dashboard | Ringkasan lintas platform, baris terburuk, grafik |
+| Latihan | 13 tugas dengan kunci jawaban rumus hidup dan prompt siap salin |
+
+Ganti sel biru dengan ekspor akunmu, atur asumsi kuning, lalu lampirkan file ke agent. Prompt ada di sheet Latihan dan di bagian atas.
 
 ### Batasan jujur
 
