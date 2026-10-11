@@ -1,0 +1,5 @@
+platform,campaign,orders,units,ad_spend,ad_sales,cogs_per_unit,fee_pct,fixed_fee_per_order,voucher_pct,shipping_subsidy_per_order,affiliate_pct,return_pct
+shopee,Kaos Premium GMV Max,64,70,4200000,16500000,98000,0.08,1250,0.05,3000,0,0.02
+shopee,Kaos Polos 3 Pack,140,160,4200000,21000000,100000,0.08,1250,0.05,3000,0,0.03
+tiktokshop,Hoodie GMV Max,38,40,3000000,13800000,135000,0.06,1250,0.04,2500,0.10,0.03
+tokopedia,Tote Bag Ads,3,3,400000,900000,160000,0.07,1250,0.03,2500,0,0.01

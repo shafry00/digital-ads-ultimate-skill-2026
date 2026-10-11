@@ -1,22 +1,23 @@
 ---
 name: digital-ads-ultimate
-description: End-to-end paid advertising for Google Ads, Meta Ads (Facebook and Instagram), LinkedIn Ads, and TikTok Ads. Use for ad strategy, platform selection, budget and break-even math, tracking and conversion setup, campaign structure, keyword and audience research, ad copy and creative briefs, landing page review, account audits, daily/weekly optimization, scaling, troubleshooting, A/B tests, and performance reports with prioritized recommendations. Triggers on PPC, paid social, performance marketing, ROAS, CPA, CPL, CAC, lead gen, learning phase, Smart Bidding, Performance Max, Advantage+, Smart+, Spark Ads, Thought Leader Ads, iklan berbayar, optimasi iklan, audit akun iklan, bikin campaign.
+description: End-to-end paid advertising for Google Ads, Meta Ads (Facebook and Instagram), LinkedIn Ads, TikTok Ads, and marketplace ads (Shopee Ads, Tokopedia, TikTok Shop GMV Max). Use for ad strategy, platform selection, budget and break-even math, tracking and conversion setup, campaign structure, keyword and audience research, ad copy and creative briefs, landing page review, account audits, daily/weekly optimization, scaling, troubleshooting, A/B tests, and performance reports with prioritized recommendations. Also profit metrics (ROAS, MER, TACoS, POAS), marketplace fee stacks, and analysis of an ads data sheet or CSV. Triggers on PPC, paid social, performance marketing, ROAS, CPA, CPL, CAC, lead gen, learning phase, Smart Bidding, Performance Max, Advantage+, Smart+, Spark Ads, Thought Leader Ads, iklan Shopee, iklan Tokopedia, TikTok Shop, POAS, iklan berbayar, optimasi iklan, audit akun iklan, bikin campaign.
 ---
 
 # Digital Ads Ultimate Skill 2026
 
-One skill that takes a person from "I have a business" to "ads are running, measured, optimized, and improving", across Google, Meta, LinkedIn, and TikTok.
+One skill that takes a person from "I have a business" to "ads are running, measured, optimized, and improving", across Google, Meta, LinkedIn, TikTok, and the Indonesian marketplaces (Shopee, Tokopedia, TikTok Shop).
 
 ## Operating rules
 
 1. **Reply in the user's language.** If the user writes Indonesian, answer in Indonesian and use IDR. Keep platform terms (CPA, ROAS, Smart Bidding) in English.
-2. **Numbers before tactics.** Never recommend budgets, bids, or targets before break-even math exists (`references/01-strategy-and-math.md`). If inputs are missing, ask for them or state the assumption loudly.
-3. **Tracking before spend.** No campaign launches until the conversion event fires correctly and is verified (`references/02-measurement.md`).
-4. **Evidence over vibes.** Every diagnosis cites a metric and a comparison (this period vs prior, this ad vs sibling). No "creative feels tired". Say "CTR fell from 1.4% to 0.8% while frequency rose from 2.1 to 3.6".
-5. **Heuristics are labeled.** Rules of thumb in these files are starting points. Where a number is a heuristic, it says so. Platform facts change fast: when a recommendation depends on a current platform rule, verify against the official help center or the live account before asserting it.
-6. **Never promise results.** No guaranteed ROAS, no "will double". Give ranges with the assumptions behind them.
-7. **Compliance is part of the job.** Check ad policy and local law before creative is finalized (`references/06-creative-and-copy.md`).
-8. **Copy standards.** No em dashes. No empty hype words ("best", "guaranteed", "revolutionary"). Use concrete claims: numbers, mechanisms, specific outcomes. CTAs say the exact action that happens next. Never invent testimonials, customer counts, rankings, or guarantees. Use placeholders like `[X customers]` until the user supplies real proof.
+2. **Profit before ROAS.** Dashboards report revenue per ad rupiah. Always convert to profit (POAS) and judge the whole business with MER and TACoS (`references/12-marketplace-ads.md`). Never call a campaign good from ROAS alone.
+3. **Numbers before tactics.** Never recommend budgets, bids, or targets before break-even math exists (`references/01-strategy-and-math.md`). If inputs are missing, ask for them or state the assumption loudly.
+4. **Tracking before spend.** No campaign launches until the conversion event fires correctly and is verified (`references/02-measurement.md`).
+5. **Evidence over vibes.** Every diagnosis cites a metric and a comparison (this period vs prior, this ad vs sibling). No "creative feels tired". Say "CTR fell from 1.4% to 0.8% while frequency rose from 2.1 to 3.6".
+6. **Heuristics are labeled.** Rules of thumb in these files are starting points. Where a number is a heuristic, it says so. Platform facts change fast: when a recommendation depends on a current platform rule, verify against the official help center or the live account before asserting it.
+7. **Never promise results.** No guaranteed ROAS, no "will double". Give ranges with the assumptions behind them.
+8. **Compliance is part of the job.** Check ad policy and local law before creative is finalized (`references/07-creative-and-copy.md`).
+9. **Copy standards.** No em dashes. No empty hype words ("best", "guaranteed", "revolutionary"). Use concrete claims: numbers, mechanisms, specific outcomes. CTAs say the exact action that happens next. Never invent testimonials, customer counts, rankings, or guarantees. Use placeholders like `[X customers]` until the user supplies real proof.
 
 ## Safety gate for live accounts
 
@@ -44,6 +45,7 @@ Before any write to a live account: confirm the exact account and object IDs, st
 | Copy, hooks, creative briefs, compliance | `07-creative-and-copy.md` |
 | Landing page or lead-form review | `08-landing-and-funnel.md` |
 | Underperforming account, weekly review, scale or kill decisions | `09-optimize-and-diagnose.md` |
+| Shopee, Tokopedia, TikTok Shop ads, marketplace profit, MER, POAS, TACoS, sheet or CSV analysis | `12-marketplace-ads.md` (+ `01`, `09`) and run `scripts/marketplace_analyzer.py` |
 | Full account audit | `10-audit-checklists.md` (+ the platform file) |
 | A/B tests, reports, recommendation write-ups, templates | `11-testing-reports-templates.md` |
 
@@ -96,7 +98,7 @@ Rank by (impact x confidence) / effort. P1 = fix now (leaks, broken tracking, po
 
 ## Calculator
 
-`scripts/ads_math.py` handles break-even, funnel forecasts, budget sizing, and A/B significance. Run `python3 scripts/ads_math.py --help`. Prefer it over mental math for anything that drives a budget decision.
+`scripts/marketplace_analyzer.py sheet.csv` turns an ads sheet into ROAS, break-even ROAS, POAS, MER, TACoS, and a scale/hold/fix/cut verdict per row (columns in `12`, sample in `examples/`). `scripts/ads_math.py` handles break-even, funnel forecasts, budget sizing, and A/B significance. Run `python3 scripts/ads_math.py --help`. Prefer it over mental math for anything that drives a budget decision.
 
 ## Reference index
 
@@ -111,3 +113,4 @@ Rank by (impact x confidence) / effort. P1 = fix now (leaks, broken tracking, po
 `references/09-optimize-and-diagnose.md` decision trees, scale and kill rules, troubleshooting
 `references/10-audit-checklists.md` scored audits per platform
 `references/11-testing-reports-templates.md` tests, reports, blueprint, launch checklist
+`references/12-marketplace-ads.md` Shopee, Tokopedia, TikTok Shop, profit stack, MER, POAS, TACoS

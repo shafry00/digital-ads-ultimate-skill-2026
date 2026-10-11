@@ -119,6 +119,23 @@ Audit output skeleton: summary score + top 5 issues, per-section scores, finding
 | T14 | TikTok Shop: product feed quality, GMV Max targets realistic, per-category campaigns | High |
 | T15 | Lead gen: qualification and fast follow-up | High |
 
+## H. Marketplace ads (Shopee, Tokopedia, TikTok Shop)
+
+| ID | Check | Sev |
+| --- | --- | --- |
+| P1 | Per-product cost stack documented (fees, vouchers, shipping, affiliate, returns, COGS) | Critical |
+| P2 | Break-even ROAS and target POAS set per product or margin group | Critical |
+| P3 | Ad budget concentrated on products with POAS above target | High |
+| P4 | Reports show POAS, MER, TACoS, not ROAS alone | High |
+| P5 | Fee table and attribution rules checked in the last 30 days (rules change) | High |
+| P6 | Listing quality, rating, price vs competitors, stock checked before ads | High |
+| P7 | Low-margin products capped or excluded from ads | High |
+| P8 | Campaign-day plan: stock, voucher depth, POAS floor | Medium |
+| P9 | Affiliate/creator commission included in margin | High |
+| P10 | Returns/cancel provision included | Medium |
+| P11 | Automated campaigns (GMV Max style) have realistic targets, grouped by margin | Medium |
+| P12 | Payout reconciliation vs reported sales | Medium |
+
 ## F. Scoring walkthrough (example)
 
 Meta items scored: M1 pass (5), M3 pass (5), M4 fail (0 of 3), M7 partial (1.5 of 3), M12 pass (3), M9 fail (0 of 3). Sum applicable weights = 5+5+3+3+3+3 = 22. Score = (5+5+0+1.5+3+0)/22 = 14.5/22 = 66. Band: meaningful leaks. Fix M4 and M9 first (structure and fatigue), they unlock M7.

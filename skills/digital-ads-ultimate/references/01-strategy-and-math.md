@@ -12,6 +12,8 @@ Break-even ROAS        = 1 / contribution margin %      (price / contribution)
 Target CPA             = break-even CPA x (1 - desired profit share)   e.g. x 0.6 to 0.7
 Target ROAS            = 1 / (contribution margin % x (1 - desired profit share))
 MER (blended)          = total revenue / total ad spend
+POAS                   = contribution before ads (from ad sales) / ad spend, break-even 1.0 (= ROAS x contribution margin %)
+TACoS                  = ad spend / total store sales (marketplaces)
 New-customer CAC       = ad spend / new customers
 LTV:CAC                = lifetime contribution / CAC   (healthy range commonly cited: 3:1 or better; heuristic)
 Payback period         = CAC / monthly contribution per customer
@@ -50,7 +52,7 @@ Pick platforms by where the buyer is and how the purchase happens, not by trend.
 | B2B SaaS, ACV high | LinkedIn, Google Search | Meta retargeting | LinkedIn is expensive per click, justify with deal size |
 | B2B SMB, low ACV | Google Search, Meta | LinkedIn only if ACV supports cost | Check break-even CPL against LinkedIn's typical cost |
 | Mobile app | Meta, TikTok, Google App campaigns | Apple/other | Needs MMP and event setup |
-| TikTok Shop / marketplace seller | TikTok (GMV Max), Meta | Marketplace ads | Follow the shop's ad tooling |
+| Marketplace seller (Shopee, Tokopedia, TikTok Shop) | Marketplace ads on proven products, TikTok GMV Max | Meta/TikTok/creators to feed marketplace traffic | See `12-marketplace-ads.md`, judge by POAS and MER |
 
 Heuristic: LinkedIn CPCs are often several times Meta's. If break-even CPL is below roughly what 20 to 30 clicks cost on LinkedIn at the user's conversion rate, LinkedIn probably does not fit yet. Compute it, do not guess (`ads_math.py funnel`).
 
